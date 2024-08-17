@@ -1,0 +1,169 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	list-style: none;
+	font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+	width: 100%;
+	height: 80px;
+	background-color: rgb(41, 59, 53);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	color: #f4e5e5;
+}
+
+.menu ul{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.menu ul li a{
+	text-decoration: none;
+	color: #f6f6f6;
+	padding: 5px 12px;
+	letter-spacing: 2px;
+	font-size: 18px;
+}
+
+.menu ul li a:hover{
+	border-bottom: 4px solid #f4ecec;
+	transition: 0.4s;
+} 
+
+.signup a{
+	text-decoration: none;
+	color: #14ebdd75;
+	font-size: 18px;
+	font-weight: bold;
+	border-radius: 12px;
+	padding: 12px 30px;
+	border: 2px solid #ff0000;
+}
+
+.signup a:hover{
+	background-color: red;
+	transition: 0.6s;
+}
+
+.body {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(travelimag/img4.gif);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.heading{
+	width: 100%;
+	max-width: 500px;
+	text-align: center;
+	color: #fff;
+	margin-bottom: 50px;
+}
+
+.heading h1{
+	font-size: 40px;
+}
+
+.heading a{
+	text-decoration: none;
+	color: #aaf6bb;
+	font-size: 25px;
+	font-weight: bold;
+	border-radius: 45px;
+	padding: 14px 50px;
+	background-color: #026b53;
+}
+
+.heading a:hover{
+	letter-spacing: 3px;
+	transition: 0.6s;
+}
+
+.tours{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.places{
+	width: calc(33.33% - 20px);
+	margin: 10px;
+	display: inline-block;
+	text-align: center;
+	border-radius: 12px;
+}
+
+.places h2{
+	color: rgb(217, 247, 232);
+	font-size: 35px;
+	letter-spacing: 3px;
+	border-radius: 1px;
+	padding: 30px 30px;
+	background-color: #84edc2;
+	background-image: linear-gradient(rgba(8, 14, 8, 0.5),rgba(129, 243, 199, 0.5)),url(img1.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.places a{
+	text-decoration: none;
+	color: rgb(161, 226, 242);
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 12px;
+	padding: 12px 30px;
+	background-color: #2f744a;
+}
+
+.places a:hover{
+	background-color: #000;
+	letter-spacing: 3px;
+	transition: 0.6s;
+}
+
+.footer{
+	width: 100%;
+	height: 50px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.footer a{
+	text-decoration: none;
+	color: green;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.footer a:hover{
+	text-decoration: underline;
+	transition: 0.4s;
+}
+
+@media (max-width: 768px) {
+	.places {
+		width: calc(50% - 20px);
+	}
+}
+
+@media (max-width: 480px) {
+	.places {
+		width: 100%;
+		margin: 10px 0;
+	}
+}
